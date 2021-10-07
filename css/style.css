@@ -39,7 +39,7 @@ img[src$="jpg"]{width:200px}
  /* use a pseudo class to target an elemennt based on its postion inside another element 
  can do last-child, first child, nthchild*/
  p:last-child{
-     font-style:italic;
+     font-style: italic;
  }
  /* using anth-child we can style multiple elements based on their position, based on a formula
  nth-child(5) - will style only the fifth tag
@@ -48,3 +48,27 @@ img[src$="jpg"]{width:200px}
  li:nth-child(2n-1){
      background-color: rgb(252, 172, 0);
     }
+
+    /* inline vs block elements */
+    /* section is a block element -meaning it takes up the whole line
+     by default and pushes other elements down to the next line  */
+     section{
+/* block elements can have a set width and height */
+width: 400px;
+height: 200px;
+background-color: cadetblue;
+     }
+     nav{
+         /* by default, a block element takes up the width of the page (or the element its inside of) */
+         /* rgba allows you to set an alpha channel as a value between 0 and 1, where 0 is fully
+    transparent and 1 is fully opaque */
+        background-color: rgb(20,20,10,.5);
+     }
+
+     span{
+         /* inline elements cant have a width and height, so your browser will ignore these properies */
+         width: 100px;
+         height: 100px;
+         /* using rgb: three number values between 0 and 255, each representing red, green, and blue */
+         background-color: rgb(255,128,200)
+     }

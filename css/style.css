@@ -3,3 +3,27 @@
 body{
     background-color:green;
 }
+
+/* target all paragraphs and h2 tags to be a specific font colour */
+p, h2{
+    color: silver;
+}
+/* target specifically the paragraph inside the footer   */
+footer p{ 
+    color:whitesmoke;
+    font-size: 10px; 
+}
+/* target an element based on its class (using the class larger - use a dot */
+/* a class can be used on multiple elements on a page  */
+.larger{
+    font-size: 24px;
+}
+/* target an element based on its ID - use a #
+An ID should be unquie (only one element on the page should have it */
+#play{
+    font-weight: bold;
+    font-size: 20px;
+}
+/* use an attribute selector to target only .jpg images */
+/* $= means "ends with - so we are looking for image tags whoses source ends with "jpg" */
+img[src$="jpg"]{width:200px} 
